@@ -47,7 +47,7 @@ h1:last-of-type {
     padding: 2vh;
     margin: 2vh;
     font-size: 12px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif
 }
 .faq-box:hover{
     cursor: pointer;
