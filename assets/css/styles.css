@@ -1,5 +1,5 @@
-body{
-  font-family: "Merriweather","Helvetica Neue",Arial,sans-serif;
+body {
+  font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
 }
 
 #team-scroll::-webkit-scrollbar {
@@ -7,7 +7,7 @@ body{
 }
 
 #team-scroll::-webkit-scrollbar-track {
-  background: rgba(54,54,54,0.69);
+  background: rgba(54, 54, 54, 0.69);
   border-radius: 99px;
   /*width: 10px;*/
   /*height: 10px;*/
@@ -35,4 +35,192 @@ body{
 .modal-body {
   max-height: 75vh;
   overflow-y: scroll;
+}
+
+.primary-btn {
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Play", sans-serif;
+  font-weight: 600;
+  padding: 3px 9px 3px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  position: relative;
+  z-index: 1;
+  border-color: rgba(255, 255, 255, 0);
+
+}
+
+.primary-btn:hover:before {
+  height: 100%;
+  width: 100%;
+}
+
+.primary-btn:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.primary-btn:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  border-left: 2px solid rgb(255, 255, 255);
+  border-top: 2px solid rgb(255, 255, 255);
+  content: "";
+  z-index: -1;
+  -webkit-transition: all, 0.7s;
+  -o-transition: all, 0.7s;
+  transition: all, 0.7s;
+  border-radius: 0.8vh;
+}
+
+.primary-btn:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  width: 30px;
+  border-right: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  content: "";
+  z-index: -1;
+  -webkit-transition: all, 0.7s;
+  -o-transition: all, 0.7s;
+  transition: all, 0.7s;
+  border-radius: 0.8vh;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+
+input[type=text] {
+
+  padding: 12px 20px;
+  margin: 9px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+  width: 40%;
+  height: 20%;
+  border: none;
+}
+
+input[type=text]:hover {
+  border: 1px solid #000;
+  transition: 6s;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.499);
+  opacity: 1;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+
+
+}
+
+
+@media(max-width: 992px) {
+  .btn {
+    width: 20%
+  }
+
+  input[type=text] {
+    width: 50%;
+  }
+}
+
+@media(max-width: 768px) {
+  .btn {
+    width: 40%
+  }
+
+  input[type=text] {
+    width: 90%;
+  }
+}
+
+@media(max-width: 440px) {
+  .btn {
+    width: 50%;
+    font-size: 18px;
+  }
+
+  input[type=text] {
+    width: 100%;
+  }
+
+}
+
+@media(max-width: 373px) {}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.rowf{
+  display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.columnf {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 720px) {
+  .rowf{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .columnf {
+    width: 100%;
+    display: block;
+  }
+}
+
+.cardf {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2px;
+}
+
+.containerf {
+  padding: 0 16px;
+}
+
+.containerf::after,
+.rowf::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.buttonf {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonf:hover {
+  background-color: #555;
 }
