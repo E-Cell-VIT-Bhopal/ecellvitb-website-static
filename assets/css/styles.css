@@ -1,5 +1,6 @@
 body {
   font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
+  width: 100%;
 }
 
 #team-scroll::-webkit-scrollbar {
