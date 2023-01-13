@@ -25,7 +25,8 @@
 	}
 }
 button.modalbutton {
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 800;
   border: none;
   border-image-slice: 1;
   background: var(--gradient) !important;
