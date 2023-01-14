@@ -105,11 +105,12 @@ button.modalbutton:hover, button.modalbutton:focus {
   
 }
 .modal-body{
-  padding: 2px 16px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
+  padding: 1px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 .liveSearchBar{
   display: flex;
