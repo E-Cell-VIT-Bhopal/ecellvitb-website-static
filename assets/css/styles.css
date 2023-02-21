@@ -221,3 +221,7 @@ input[type=text]:hover {
 .buttonf:hover {
   background-color: #555;
 }
+
+#news-letter{
+  padding: 0;
+}
