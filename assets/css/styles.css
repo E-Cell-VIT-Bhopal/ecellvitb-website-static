@@ -225,3 +225,13 @@ input[type=text]:hover {
 #news-letter{
   padding: 0;
 }
+
+#blog{
+  padding: 3rem;
+}
+
+.instagram-media{
+  max-width:100%;
+  width:calc(100% - 0px);
+  padding: 0 10%;
+}
