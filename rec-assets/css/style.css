@@ -29,25 +29,25 @@ button.modalbutton {
   font-weight: 800;
   border: none;
   border-image-slice: 1;
-  background: var(--gradient) !important;
+  background: #ffffff !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
-  border-image-source: var(--gradient) !important;
+  border-image-source: rgb(255, 255, 255) !important;
   text-decoration: none;
   transition: all .5s ease;
   padding: 1vh;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 button.modalbutton:hover, button.modalbutton:focus {
-      background: var(--gradient) !important;
+      background: linear-gradient(to right, #282434 , rgb(0, 0, 0)) !important;
   -webkit-background-clip: none !important;
   -webkit-text-fill-color: #fff !important;
   box-shadow: #222 1px 0 10px;
   border: none;
   text-decoration: none;
   padding: 1vh;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 .modal {
   display: none; /* Hidden by default */
@@ -64,7 +64,7 @@ button.modalbutton:hover, button.modalbutton:focus {
 }
 .modal-content {
   position: relative;
-    background-color: #fefefe;
+    background-color: #ffffffca;
     color: #000;
     margin: auto;
     padding: 0;
@@ -100,7 +100,7 @@ button.modalbutton:hover, button.modalbutton:focus {
 }
 .modal-header {
   padding: 2px 16px;
-  background-color: #e96e65de;
+  background-color: #282434;
   color: rgb(0, 0, 0);
   
 }
@@ -111,6 +111,7 @@ button.modalbutton:hover, button.modalbutton:focus {
   justify-content: center;
   align-content: center;
   align-items: center;
+  background-color: #00000000;
 }
 .liveSearchBar{
   display: flex;
